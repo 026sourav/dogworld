@@ -1,0 +1,68 @@
+.container {
+    display: grid;
+    grid-template-areas: ' navbar navbar ' 'home  aside' ' contact contact';
+}
+
+#logo {
+    position: absolute;
+    left: 10px;
+    top: 23px;
+}
+
+#navbar {
+    grid-area: navbar;
+    /* border: 2px solid red; */
+    background-color: hsla(0, 24%, 18%, 0.59);
+}
+
+#navbar ul {
+    display: flex;
+    justify-content: center;
+}
+
+#navbar ul li {
+    cursor: pointer;
+    list-style: none;
+    padding: 0px 6px;
+    margin: 0px 11px;
+    color:#04ef2cd1;
+}
+
+#home {
+    /* border: 2px solid yellow; */
+    grid-area: home;
+    background-color: #d1eaea4a;
+}
+
+#pic1 {
+    height: 80vh;
+}
+
+#aside {
+    /* border: 2px solid green; */
+    grid-area: aside;
+    background-color: #ffe4c41c;
+    font-family: 'Baloo Chettan 2', cursive ;
+    text-align: center;
+    font-size: 2rem;
+justify-content: center;
+}
+
+
+.box1 {
+    height: 85vh;
+    width: 60vw;
+}
+.box2 {
+    height: 85vh;
+}
+
+#contact {
+    /* border: 2px solid firebrick; */
+    grid-area: contact;
+    color:#7db186fc;
+    /* background-color: fuchsia; */
+    width: 13vw;
+    position: fixed;
+    left: 1174px;
+}
